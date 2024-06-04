@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
 
-*{
+* {
     font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
@@ -8,15 +9,18 @@
     scroll-behavior: smooth;
 }
 
-h2,h3{
+h2,
+h3 {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 h2 {
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-size: 20px;
 }
 
@@ -28,12 +32,13 @@ h3{
     height: 500px;
 }
 
-img{
+.hover-img img,#logo-partners img, #contact img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.hover-img img:hover{
+
+.hover-img img:hover {
     background-color: #193151B2;
     opacity: 0.7;
     transition: ease-in 0.5s;
@@ -41,25 +46,29 @@ img{
 
 /* Section Clients */
 
-#customers{
+#customers {
     margin-top: 3%;
 }
+
 #logo-partners {
     display: flex;
     width: 100%;
     height: 550px;
     margin-top: 4%;
 }
-#text-partners-div{
+
+#text-partners-div {
     padding: 0% 3% 0% 3%;
 }
-#text-partners{
+
+#text-partners {
     display: flex;
     width: 100%;
     padding: 3%;
     background-color: #ABC8E1;
 }
-#stat{
+
+#stat {
     margin-top: 5%;
     background-color: #193151;
     color: #fff;
@@ -68,47 +77,56 @@ img{
     height: 220px;
     justify-content: space-evenly;
 }
-#stat div{
+
+#stat div {
     padding: 2%;
 }
-#stat h2{
+
+#stat h2 {
     font-size: 40px;
 }
-#stat p{
+
+#stat p {
     font-size: 30px;
     margin-top: 3%;
 }
 
 /* Section Contact */
 
-#contact{
+#contact {
     display: flex;
     width: 100%;
     height: 400px;
     margin-top: 5%;
 }
-form{
+
+form {
     width: 100%;
     margin-left: 10%;
 }
-#message{
+
+#message {
     width: 90%;
     height: 40px;
     background-color: #E5F4FE;
 }
-.myForm{
+
+.myForm {
     display: flex;
 }
-.myForm input, #mail{
+
+.myForm input,
+#mail {
     width: 300px;
     height: 40px;
     background-color: #E5F4FE;
 }
 
-.leftPart{
+.leftPart {
     margin-right: 20%;
 }
-#submitButton{
+
+#submitButton {
     margin-top: 5%;
     margin-left: 67%;
     color: #fff;
@@ -119,6 +137,346 @@ form{
     height: 50px;
     font-size: 15px;
 }
-.myForm, #mailDiv{
+
+.myForm,
+#mailDiv {
     margin-bottom: 2%;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #FAFAFA;
+}
+
+header .logo {
+    width: 122px;
+    height: 120px;
+}
+
+header .logo img {
+    max-height: 100%;
+    width: auto;
+}
+
+
+.menu-nav nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.menu-nav nav ul .section-menu a {
+    text-decoration: none;
+    color: #0B1522;
+}
+
+.menu-nav nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-contact {
+    color: #fff;
+    background-color: #395E7F;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-contact:hover {
+    text-decoration: underline;
+}
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(42, 41, 41, 0.5), rgba(42, 41, 41, 0.5)), url("../img/woman-architect-analysing-matching-blueprints-new-building-project-sitting-desk.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-presentation {
+    margin-left: 50px;
+}
+
+.home-presentation h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 65.47px;
+}
+
+.home-presentation .home-title {
+    background-color: #193151;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px 42px;
+    margin-bottom: 40px;
+}
+
+.agency {
+    display: flex;
+}
+
+.agency div {
+    width: 50%;
+    padding: 60px;
+}
+
+.agency-presentation h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    line-height: 49.1px;
+}
+
+.agency-presentation p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.55px;
+}
+
+.container-img-agency {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container-img-agency img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.recommandations-presentation {
+    text-align: center;
+}
+
+.recommandations-presentation p {
+    margin: 20px;
+}
+
+.recommandations-presentation .title1 {
+    font-size: 24px;
+    line-height: 32.74px;
+}
+
+.recommandations-presentation .title2 {
+    font-size: 36px;
+    line-height: 49.1px;
+}
+
+
+.slideshow-container {
+    background-color: #ECF1F5;
+    position: relative;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #989898;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.container-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.container-testimonial .logo-testimonial {
+    width: 100%;
+    height: auto;
+}
+
+.container-testimonial .logo-testimonial img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-testimonial {
+    text-align: left;
+    font-family: "Esteban", serif;
+    color: #395E7F;
+    margin-bottom: 20px;
+}
+
+.container-footer {
+    width: 100%;
+    margin-top: 10%;
+    background-color: #193151;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.line {
+    width: 3px;
+    height: auto;
+    background-color: #fff;
+}
+
+.container-footer .info1-footer,
+.container-footer .info2-footer,
+.container-footer .info3-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.btn-social-medias {
+    margin-top: 20px;
+}
+
+.btn-social-medias a {
+    color: #fff;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.container-footer .info2-footer div {
+    margin-bottom: 30px;
+}
+
+.contact-description a {
+    color: #fff;
+}
+
+
+.container-footer .info3-footer .menu-footer li a {
+    color: #fff;
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    background-color: #E5F4FE;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: #E5F4FE;
+}
+
+.newsletter .submit-newsletter {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -5px;
+    padding: 5px;
+    background-color: #395E7F;
+    border: #395E7F;
+    color: #fff;
+    font-size: 20px;
 }
