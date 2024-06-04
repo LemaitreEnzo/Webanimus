@@ -78,3 +78,47 @@ img{
     font-size: 30px;
     margin-top: 3%;
 }
+
+/* Section Contact */
+
+#contact{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-top: 5%;
+}
+form{
+    width: 100%;
+    margin-left: 10%;
+}
+#message{
+    width: 90%;
+    height: 40px;
+    background-color: #E5F4FE;
+}
+.myForm{
+    display: flex;
+}
+.myForm input, #mail{
+    width: 300px;
+    height: 40px;
+    background-color: #E5F4FE;
+}
+
+.leftPart{
+    margin-right: 20%;
+}
+#submitButton{
+    margin-top: 5%;
+    margin-left: 67%;
+    color: #fff;
+    border: #395E7F;
+    background-color: #395E7F;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+.myForm, #mailDiv{
+    margin-bottom: 2%;
+}
