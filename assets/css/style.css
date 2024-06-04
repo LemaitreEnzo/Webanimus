@@ -332,11 +332,15 @@ header .logo img {
     background-color: #E5F4FE;
     padding: 10px;
     width: 100%;
+    border-radius: 5px;
+    border: #E5F4FE;
 }
 
 .newsletter .submit-newsletter {
     position: absolute;
-    padding: 7px;
+    margin-top: 2px;
+    margin-left: -5px;
+    padding: 5px;
     background-color: #395E7F;
     border: #395E7F;
     color: #fff;
