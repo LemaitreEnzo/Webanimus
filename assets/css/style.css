@@ -297,55 +297,6 @@ form {
         height: 100px;
     }
 
-    .carousel {
-        display: none;
-    }
-
-    .carousel-responsive {
-        display: block;
-        margin-left: 10%;
-        position: relative;
-        width: 80%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .carousel-inner-responsive {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .carousel-item-responsive {
-        flex: 0 0 100%;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .carousel-item-responsive img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .carousel-responsive button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        user-select: none;
-    }
-
-    button.prev {
-        left: 0;
-    }
-
-    button.next {
-        right: 0;
-    }
-
     #stat {
         height: 200px;
     }
@@ -363,7 +314,6 @@ form {
         margin-top: 3%;
         text-align: center;
     }
-
 
     #contact {
         display: block;
@@ -389,6 +339,68 @@ form {
     #submitButton {
         margin-top: 5%;
         margin-left: 57%;
+        color: #fff;
+        border: #395E7F;
+        background-color: #395E7F;
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .hover-img {
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+
+    #stat {
+        height: 200px;
+    }
+
+    #stat h2 {
+        font-size: 30px;
+    }
+
+    #stat div {
+        margin-top: 5%;
+    }
+
+    #stat p {
+        font-size: 20px;
+    }
+
+    #contact {
+        display: block;
+        width: 100%;
+    }
+    form {
+        margin-left: 15%;
+    }
+    #message {
+        width: 62%;
+        height: 30px;
+        background-color: #E5F4FE;
+    }
+    .myForm input,
+    #mail {
+        width: 200px;
+        height: 30px;
+        background-color: #E5F4FE;
+    }
+
+    #submitButton {
+        margin-top: 5%;
+        margin-left: 50%;
         color: #fff;
         border: #395E7F;
         background-color: #395E7F;
