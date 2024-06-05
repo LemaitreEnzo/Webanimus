@@ -99,6 +99,7 @@ header .logo img {
 
 .agency {
     display: flex;
+    align-items: center;
 }
 
 .agency div {
@@ -297,6 +298,7 @@ header .logo img {
     width: 3px;
     height: auto;
     background-color: #fff;
+    margin: 30px;
 }
 
 .container-footer .info1-footer,
@@ -379,7 +381,7 @@ header .logo img {
 }
 
 /* For medium devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     .card__content {
         margin-inline: 3rem;
     }
@@ -473,6 +475,8 @@ header .logo img {
 
     .home-presentation h1 {
         font-size: 26px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .agency {
@@ -509,7 +513,7 @@ header .logo img {
 }
 
 /* For large devices */
-@media screen and (min-width: 1120px) {
+@media screen and (max-width: 1120px) {
     .card__container {
         max-width: 1120px;
     }
@@ -520,6 +524,10 @@ header .logo img {
 
     .swiper-button-next {
         right: -1rem;
+    }
+
+    .container-footer {
+        font-size: 20px;
     }
 }
 
