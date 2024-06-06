@@ -1070,13 +1070,13 @@ form {
 }
 @media screen and (max-width: 1200px) {
     #form {
-        margin-left: 20%;
+        margin-left: 15%;
     }
     #message {
-        width: 68%;
+        width: 72%;
     }
     #submitButton {
-        margin-left: 55%;
+        margin-left: 57%;
     }
     .container-footer {
         margin-top: 63%;
