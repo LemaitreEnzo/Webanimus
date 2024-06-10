@@ -1,14 +1,14 @@
-/*=============== SWIPER JS ===============*/
+/=============== SWIPER JS ===============/
 let swiperCards = new Swiper(".card__content", {
     loop: true,
     spaceBetween: 32,
     grabCursor: true,
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //     dynamicBullets: true,
+    // },
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -43,5 +43,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
-
