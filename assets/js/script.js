@@ -3,13 +3,6 @@ let swiperCards = new Swiper(".card__content", {
     loop: true,
     spaceBetween: 32,
     grabCursor: true,
-
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //     dynamicBullets: true,
-    // },
-
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -25,12 +18,6 @@ let swiperCards = new Swiper(".card__content", {
     },
 });
 
-const burgerMenu = document.querySelector('.burger-menu');
-const navLinks = document.querySelector('.menu-nav nav ul');
-
-burgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('show'); // Ajoute ou supprime la classe "show" pour afficher ou masquer les liens de navigation
-});
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -49,5 +36,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
-
